@@ -37,3 +37,13 @@ import {
       </Switch>
     </Router>
 ```
+
+### Using map in a short way
+
+>Returns UserItem component
+
+```js
+{props.items.map((user) => (
+        <UserItem key={user.id} />
+      ))}
+```

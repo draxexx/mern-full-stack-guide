@@ -47,3 +47,39 @@ import {
         <UserItem key={user.id} />
       ))}
 ```
+
+### Import orders
+
+```js
+// FIRST IMPORT THIRD PARTY LIBRARIES
+import React from "react";
+
+// THEN IMPORT YOUR OWN FILES
+import "./UsersList.css";
+import UserItem from "./UserItem";
+import Card from "shared/components/UIElements/Card";
+```
+
+### Using NavLink component from the react router dom
+
+1. Import NavLink
+
+`import { NavLink } from "react-router-dom";``
+
+2. Use it
+
+>If you put 'exact', that link will be default selected
+
+```js
+<NavLink to="/" exact>
+          ALL USERS
+        </NavLink>
+```
+
+### React.Fragment
+
+>We can return multiple components inside React.Fragment tag
+
+`
+<React.Fragment></React.Fragment>
+`
